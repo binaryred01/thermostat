@@ -15,6 +15,12 @@ Thermostat.prototype.up = function() {
   }
 
 Thermostat.prototype.down = function() {
+      // this.temp -= 1;
+      if (this.temp > 10) {
       this.temp -= 1;
+      return this.temp
+      } else {
+        return 'minimum temperature reached'
+      }
 
   }
