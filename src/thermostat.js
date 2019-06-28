@@ -12,7 +12,7 @@ Thermostat.prototype.currentTemp = function() {
   };
 
 Thermostat.prototype.up = function() {
-    this.temp += 1;
+    this.temp ++;
 
   };
 
@@ -35,7 +35,7 @@ Thermostat.prototype.up = function() {
 
 Thermostat.prototype.down = function() {
       if (this.temp > this.MINTEMP) {
-      this.temp -= 1;
+      this.temp --;
       return this.temp
       } else {
         return 'minimum temperature reached'
